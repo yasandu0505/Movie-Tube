@@ -1,24 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Login from "./components/login.component";
+import Mainbody from "./components/mainbody.component";
+import Navbar from "./components/navbar.component";
+import { useState } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+} from "react-router-dom/cjs/react-router-dom.min";
+import Signup from "./components/signup.component";
+import Addvideo from "./components/addvideo.component";
 
 function App() {
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleCategoryClick = (category) => {
+    setSelectedCategory(category);
+  };
+
+  const handleSearch = (term) => {
+    setSearchTerm(term);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Navbar onCategoryClick={handleCategoryClick} onSearch={handleSearch} />
+        <Switch>
+          <Route exact path='/'>
+            <Mainbody
+              selectedCategory={selectedCategory}
+              searchTerm={searchTerm}
+            />
+          </Route>
+          <Route path='/login'>
+            <Login />
+          </Route>
+          <Route path='/signup'>
+            <Signup />
+          </Route>
+          <Route path='/addvideo/:loggedIn'>
+            <Addvideo />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

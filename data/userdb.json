@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "yasandu",
+      "email": "yasanduyaka2005@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "2",
+      "username": "imanjith",
+      "email": "imanjithyaka2005@gmail.com",
+      "password": "1234"
+    },
+    {
+      "username": "pkyaa",
+      "password": "Gg43DY9E",
+      "email": "yasandu@gmail.com",
+      "id": "e-lYUdV"
+    },
+    {
+      "username": "tiyaaa",
+      "password": "123456",
+      "email": "tiya@gmail.com",
+      "id": "jMRlOvC"
+    },
+    {
+      "username": "yakarii45",
+      "password": "3443",
+      "email": "yakari@gmail.com",
+      "id": "oGK7x1F"
+    },
+    {
+      "username": "gayathri",
+      "password": "1234",
+      "email": "gayathri@gmail.com",
+      "id": "eKw_Vfy"
+    }
+  ]
+}

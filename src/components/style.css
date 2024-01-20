@@ -1,0 +1,54 @@
+a:hover{
+    cursor: pointer;
+}
+
+.categorylist{
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+  outline-color: black;
+}
+
+.categorylist:hover{
+  cursor: pointer;
+
+}
+
+.loginformadd{
+  border-radius: 25px; 
+  width: 600px;
+  height: 500px;
+
+}
+
+.loginform {
+    width: 800px;
+    height: 500px;
+    position: relative; /* To position the child div relative to this div */
+    border-radius: 25px; 
+  }
+
+  /* Style for the child div */
+  .form-sidee {
+    height: 100%;
+    width:60%;
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    border-top-left-radius: 25px; 
+    border-bottom-left-radius: 25px; 
+    border-top-right-radius: 100px; 
+    border-bottom-right-radius:100px;
+  }
+
+
+  .custom-input{
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    outline-color: red;
+    
+  }
+
+
